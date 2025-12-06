@@ -7,6 +7,11 @@ Useful commands
 pip freeze | grep <library-name>
 ```
 
+```bash
+# create a simple seed (Customer and transactions)
+python create_seed.py
+```
+
 Project structure
 
 ```
