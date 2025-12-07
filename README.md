@@ -4,12 +4,19 @@ Useful commands
 
 ```bash
 # get library information like version
-pip freeze | grep <library-name>
+A<library-name>
 ```
 
 ```bash
 # create a simple seed (Customer and transactions)
 python create_seed.py
+```
+
+```bash
+# run tests (use -v flag for verbose output)
+pytest
+# run tests for specific file
+pytest file-name -v
 ```
 
 Project structure

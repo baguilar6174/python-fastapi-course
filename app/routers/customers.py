@@ -9,7 +9,7 @@ router = APIRouter()
 db_customers: list[Customer] = []
 
 
-@router.post("/customers", response_model=Customer, tags=["customers"])
+@router.post("/customers", response_model=Customer, tags=["customers"], status_code=status.HTTP_201_CREATED)
 async def create_customer(data: CustomerCreate, session: SessionDependency):
     customer = Customer.model_validate(data.model_dump())
 
